@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h1{
+    color: aliceblue;
+}
+
+td{
+    text-align: center;
+    font-size: 100px;
+    color: aliceblue;
+    border: 1px solid rgb(247, 247, 247);
+    border-radius: 10px;
+    padding: 0.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
