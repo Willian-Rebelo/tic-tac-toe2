@@ -1,20 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
 }
 
-h1{
-    color: aliceblue;
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-td{
-    text-align: center;
-    font-size: 100px;
-    color: aliceblue;
-    border: 1px solid rgb(247, 247, 247);
-    border-radius: 10px;
-    padding: 0.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+tr {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+
+td {
+  font-size: 80px;
+  width: 130px;
+  height: 130px;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+  color: aliceblue;
+  text-align: center;
+  border: 1px solid rgb(247, 247, 247);
+  font-family: "Varela Round", sans-serif;
+  text-shadow: 4px 4px rgba(87, 84, 84, 0.678);
+}
+
+td:hover {
+  background-color: rgb(35, 35, 39);
+  transition: all 0.4s;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition-delay: 3ms;
 }
