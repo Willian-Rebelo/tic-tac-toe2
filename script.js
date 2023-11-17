@@ -20,17 +20,4 @@ function render() {
         tds[indice].innerHTML = tabela[indice]
         indice++
     }
-
-    // for(let indice = 0; indice < 9; indice++) {
-    //     tds[indice].innerHTML = tabela[indice]
-    // }
-
-    // tds.forEach(function(td, indice) {
-    //     td.innerHTML = tabela[indice]
-    // })
-
-    // tds.forEach((td, indice) => {
-    //     td.innerHTML = tabela[indice]
-    // })
-
 }
